@@ -1,5 +1,5 @@
 # Conversational AI
-Conversational AI application demos
+Conversational AI application demos for Virtual Agents
 
 **About**
 
