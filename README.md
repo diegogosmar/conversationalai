@@ -1,5 +1,5 @@
 # Conversational AI
-Conversational AI applications
+Conversational AI application demos
 
 **About**
 
