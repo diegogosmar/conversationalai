@@ -1,10 +1,11 @@
 # Conversational AI
-Conversational AI application demos for Virtual Agents
+Conversational AI applications demos for Virtual Agents
 
 **About**
 
-Prompt engineering based example for Conversationa AI application
+Prompt engineering based examples for Conversational AI applications
 
 **Use case**
 
-People with disabilities asking for help during a Boat trip.
+1. People with disabilities asking for help during a Boat trip.
+2. Pizza delivery order management
