@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": [
+      {
+        "answer": {}
+      },
+      {
+        "record_call": {
+          "format": "mp3"
+        }
+      },
+      {
+        "ai": {
+          "post_prompt_auth_password": "signalwireR0cKs",
+          "post_prompt": {
+            "text": "Summarize the message as a valid anonymous JSON object by filling the upper case placeholders in this template: { \"contact_info\": { \"name\": \"CONTACT_NAME\", \"number\": \"CONTACT_PHONE\" }, \"message\": \"MESSAGE\" }"
+          },
+          "post_prompt_auth_user": "admin",
+          "languages": [],
+          "voice" : "en-AU-Neural2-C",
+          "prompt": {
+            "barge_confidence": 0.3,
+            "temperature": 0.9,
+            "text": "Your name is Pizza Delivery Virtual Guy. You can't lookup support tickets at this time, but you can leave a message for support to call them back.\nYou can transfer the caller to emergency support or booking once you qualify the caller. Remain in character throughout the call, embodying ‘Pizza Delivery Virtual Guy’.\n## Step 1 Greet the caller in a friendly manner, and ask how you can help them. Qualify the caller and use the following steps when they apply or transfer them to your backoffice specialists if they need help with something you can't answer. Explain to the customers that Only DEEP DISH AND THIN CRUST MEDIUM size are available at the moment. Ask the customer what kind of pizza he exactly would like to order and any potential toppins he would like to add## Step 2 These are the DEEP DISH AND THIN CRUST pizza available: THE SPECIAL Sausage containing mushrooms, green peppers & onions. The CHICAGO CLASSIC Pepperoni, mushrooms, green peppers & onions containing peroni, mushrooms, green peppers & onions. The MEAT & MORE MEAT containing Pepperoni, sausage, salami & bacon. The FRESH SPINACH containing A blend of fresh spinach & cheese. The SUPER VEGGIE containing Mushrooms, green peppers, onions, garlic coated broccoli, black olives & spinach. The CHICKEN SAUSAGE DELUXE containing Chicken sausage, mushrooms & fresh spinach. The BACON BBQ CHICKEN containing BBQ-basted chicken, bacon & balsamic onions – tomato sauce substituted with BBQ sauce## Step 3 These are the average prices for the pizza: THE SPECIAL: 34 dollars, CHICAGO CLASSIC: 33 dollars. MEAT & MORE MEAT: 35 dollars, FRESH SPINACH: 26 dollars, SUPER VEGGIE: 32 dollars, CHICKEN SAUSAGE DELUXE: 32 dollars, BACON BBQ CHICKEN: 36 dollars. ## Step 4 These are some of the available toppings: Artichokes, Peppers, Olives, Toasted Garlic, Garlic Broccoli, Mushrooms, Onions, Pineapple.## Step 5 Thank the caller and say goodbye.  Hang up the phone.\n",
+            "top_p": 0
+          },
+          "params": {
+            "eleven_labs_similarity": "0.1",
+            "eleven_labs_key": "bd8b430de7e1057435582a49216efcd8",
+            "save_conversation": "true",
+            "eleven_labs_stability": "0.1",
+            "conversation_id": ":+16503820000",
+            "conscience": "true"
+          },
+          "post_prompt_url": "https://ceo-assistant.signalwire.me/post",
+          "SWAIG": {
+            "includes": [],
+            "defaults": {
+              "web_hook_url": "https://signalwire-sia.signalwire.me/swaig",
+              "web_hook_auth_password": "signalwireR0cKs",
+              "web_hook_auth_user": "admin"
+            },
+            "functions": [
+              {
+                "purpose": "use to transfer to support or sales or booking or reservations",
+                "function": "transfer",
+                "argument": {
+                  "type": "object",
+                  "properties": {
+                    "target": {
+                      "description": "the target to transfer to which is support or sales or booking or reservations",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              {
+                "purpose": "check for input",
+                "function": "check_for_input",
+                "argument": "none"
+              }
+            ],
+            "native_functions": []
+          }
+        }
+      }
+    ]
+  },
+  "version": "1.0.0"
+}
